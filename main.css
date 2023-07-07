@@ -19,11 +19,15 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 	color: #FFF;
-	background-color: var(--dark);
+	/* background-color: var(--dark); */
+	/* background-color: #98B5FF; */
+	background: url(pic/floating-cities-01_16x9.jpg) fixed 100%;
+	/* background: url(pic/crystalspacecitythemillerplanetca.jpg) fixed; */
+	
 }
 
 header {
-	padding: 2rem 1rem;
+	padding: 5rem 1rem 2rem 1rem;
 	max-width: 800px;
 	width: 100%;
 	margin: 0 auto;
@@ -32,7 +36,7 @@ header {
 header h1{ 
 	font-size: 2.5rem;
 	font-weight: 300;
-	color: #fff;
+	color: #000000bd;
 	margin-bottom: 1rem;
 }
 
@@ -49,11 +53,11 @@ input, button {
 
 #new-task-input {
 	flex: 1 1 0%;
-	background-color: var(--darker);
+	background-color: var(--light);
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-right: 1rem;
-	color: var(--light);
+	color: var(--darker);
 	font-size: 1.25rem;
 }
 
@@ -94,14 +98,14 @@ main {
 .task-list h2 {
 	font-size: 1.5rem;
 	font-weight: 300;
-	color: var(--grey);
+	color: var(--dark);
 	margin-bottom: 1rem;
 }
 
 #tasks .task {
 	display: flex;
 	justify-content: space-between;
-	background-color: var(--darkest);
+	background-color: var(--light);
 	padding: 1rem;
 	border-radius: 1rem;
 	margin-bottom: 1rem;
@@ -112,7 +116,7 @@ main {
 }
 
 .task .content .text {
-	color: var(--light);
+	color: var(--dark);
 	font-size: 1.125rem;
 	width: 100%;
 	display: block;
@@ -153,4 +157,16 @@ main {
 
 .task .actions .delete {
 	color: crimson;
+	
+}
+
+.main {
+	background: hsla(0,0%,100%,.14)!important;
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	/* background: #031956; */
+	margin: 3rem 15rem 2rem 15rem;
+	border-radius: 1.7rem;
+	position: relative;
+	min-height: 88vh;
 }
